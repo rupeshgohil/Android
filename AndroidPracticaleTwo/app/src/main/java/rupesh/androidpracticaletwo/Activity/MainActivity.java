@@ -40,7 +40,5 @@ public class MainActivity extends AppCompatActivity {
         }, 5000);
 
     }
-    //how to
-    //gohel rupesh
-    //
+
 }
