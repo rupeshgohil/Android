@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#4F9FBD</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colortopbar">#344B5D</color>
+    <color name="colorbg">#E6E7E9</color>
+    <color name="colorBlue">#241e4e</color>
+    <color name="book_loading_background">#ffffff</color>
+    <color name="book_loading_book">#ff33b5e5</color>
+    <color name="book_loading_page">#ffffff</color>
+    <color name="signinbtn">#32485f</color>
+    <color name="graylight">#939393</color>
+    <color name="checkbox">#FA4A88</color>
+    <color name="transperant_black">#80000000</color>
+</resources>

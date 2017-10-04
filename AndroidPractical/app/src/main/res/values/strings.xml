@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">AndroidPractical</string>
+    <string name="ToolbarTitle">JsonParsing</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_photos">Photos</string>
+    <string name="nav_movies">Movies</string>
+    <string name="nav_notification">Notifications</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about_us">AboutUs</string>
+    <string name="privacy_policy">PrivacyPolicy</string>
+    <string name="openDrawar">open_Drawar</string>
+    <string name="closeDrawar">close_drawar</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark_All_Read</string>
+    <string name="action_clear_all">ClearAll</string>
+    <string name="navigration_drawar_open">OpenDrawar</string>
+    <string name="navigation_drawar_close">CloseDrawar</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Glass">Glass</string>
+    <string name = "Category">Category</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Camera</item>
+        <item>Gallery</item>
+        <item>Slideshow</item>
+        <item>Tools</item>
+        <item>Share</item>
+        <item>Send</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

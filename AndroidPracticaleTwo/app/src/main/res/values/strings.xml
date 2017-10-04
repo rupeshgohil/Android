@@ -1,0 +1,68 @@
+<resources>
+	<string name="app_name">AndroidTest</string>
+	<string name="hint_UserName">UserName</string>
+	<string name="hint_Password">Password</string>
+    <string name="Login">Login</string>
+	<string name="txt_or">OR</string>
+    <string name="txt_Register">Register</string>
+    <string name="ToolbarTitle">LoginRegister</string>
+
+	<!--hint-->
+	<string name="hint_mobile_no">Mobile No</string>
+	<string name="hint_verify_otp">Verify Otp</string>
+	<string name="hint_first_name">First Name</string>
+	<string name="hint_middle_name">Middle Name</string>
+	<string name="hint_last_name">Last Name</string>
+	<string name="hint_village_name">village</string>
+	<string name="hint_date_of_birth">Date Of Birth</string>
+
+	<!--acb label-->
+	<string name="acbSendOtp">Send OTP</string>
+	<string name="acbCancelOtp">Cancel</string>
+	<string name="acbVerifyOtp">Verify</string>
+	<string name="acbResendOtp">Resend</string>
+	<string name="acbSave">Save</string>
+	<string name="acbCancel">Cancel</string>
+	<string name="acbAddChildren">Add Children</string>
+	<string name="acbAddSpouse">Add Spouse</string>
+	<string name="acbAddParent">Add Parent</string>
+
+	<!--Textview-->
+	<string name="actvDateOfBirth">Date Of Birth</string>
+	<string name="actvName">Name</string>
+	<string name="actvAddress">Address</string>
+	<string name="actvMobileNo">MobileNo</string>
+	<string name="actvVillage">Village</string>
+	<string name="actvVerifyBy">Verify By</string>
+
+	<!--Intent Param Sting-->
+	<string name="intentParam">MobileNo</string>
+	<string name="verificationMessage">Thank You For Your Interest. Waiting For Verification</string>
+	<string name="no">No</string>
+	<string name="yes">Yes</string>
+	<string name="cancel">Cancel</string>
+    <string name="internetmsg">Connection not available.Kindly check your connectivity</string>
+    <string name="exit">Exit</string>
+    <!--String Array for Village-->
+	<string-array name="villageArray">
+		<item>Choose Village</item>
+		<item>Amreli</item>
+		<item>Bardoli</item>
+		<item>Chanasma</item>
+		<item>Dehgam</item>
+		<item>Fatehpur</item>
+		<item>Halol</item>
+		<item>Kalol</item>
+		<item>Palanpur</item>
+		<item>Mahesana</item>
+		<item>Limbli</item>
+		<item>Kheralu</item>
+		<item>Dang</item>
+		<item>Chhota Udepur</item>
+		<item>Saputara</item>
+		<item>Sola</item>
+		<item>Idar</item>
+		<item>Kachhchh</item>
+	</string-array>
+
+</resources>
