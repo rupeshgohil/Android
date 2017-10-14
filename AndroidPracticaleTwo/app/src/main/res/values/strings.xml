@@ -43,6 +43,7 @@
 	<string name="cancel">Cancel</string>
     <string name="internetmsg">Connection not available.Kindly check your connectivity</string>
     <string name="exit">Exit</string>
+	<string name="app_id">179981909243751</string>
     <!--String Array for Village-->
 	<string-array name="villageArray">
 		<item>Choose Village</item>

@@ -15,13 +15,15 @@ import rupesh.androidpracticaletwo.R;
 
 public class ActList extends AppCompatActivity implements View.OnClickListener {
 
-    public Button btn1;
+    public Button btn1,btn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_list);
         btn1 = (Button) findViewById(R.id.button1);
         btn1.setOnClickListener(this);
+        btn2 = (Button) findViewById(R.id.button2);
+        btn2.setOnClickListener(this);
     }
 
     @Override
@@ -30,6 +32,9 @@ public class ActList extends AppCompatActivity implements View.OnClickListener {
         {
             case R.id.button1:
                 startActivity(new Intent(getApplicationContext(), ActLoginRegister.class));
+                break;
+            case R.id.button2:
+                startActivity(new Intent(getApplicationContext(), ActFacebookGoogleLogin.class));
                 break;
         }
     }

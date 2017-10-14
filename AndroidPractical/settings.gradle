@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':facebook', ':samples:SwitchUserSample', ':samples:Scrumptious', ':facebook-login', ':samples:Iconicus', ':samples:PlacesGraphSample', ':samples:LoginSample', ':facebook-share', ':facebook-common', ':facebook-places', ':facebook-messenger', ':samples:ShareIt', ':samples:RPSSample', ':samples:MessengerSendSample', ':facebook-core', ':facebook-applinks', ':samples:HelloFacebookSample'
