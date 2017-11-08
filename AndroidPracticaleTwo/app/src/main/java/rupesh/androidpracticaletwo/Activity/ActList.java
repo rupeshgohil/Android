@@ -38,7 +38,9 @@ public class ActList extends AppCompatActivity implements View.OnClickListener {
             case R.id.button2:
                 startActivity(new Intent(getApplicationContext(), ActFacebookGoogleLogin.class));
                 break;
-
+            case R.id.button3:
+                startActivity(new Intent(getApplicationContext(), ActDotIndecator.class));
+                break;
         }
     }
 
