@@ -2,10 +2,15 @@ package rupesh.androidpracticaletwo.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -17,6 +22,8 @@ import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
+import com.squareup.picasso.Picasso;
+
 import org.json.JSONObject;
 
 import rupesh.androidpracticaletwo.R;
@@ -25,15 +32,20 @@ import rupesh.androidpracticaletwo.R;
  * Created by Aru on 09-10-2017.
  */
 
-public class ActFacebookGoogleLogin extends AppCompatActivity {
+public class ActFacebookGoogleLogin extends AppCompatActivity  {
     CallbackManager callbackManager;
     Button logout;
+    private int SIGN_IN = 30;
+    private TextView tv;
+    private ImageView iv;
+    //private AQuery aQuery;
+    private Button btn;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_facebookgooglelogin);
+        /*Facebook login*/
         logout = (Button)findViewById(R.id.fblogout);
-
         callbackManager = CallbackManager.Factory.create();
         LoginButton loginButton = (LoginButton) findViewById(R.id.fb_login_button);
         loginButton.setReadPermissions("email");
@@ -60,12 +72,18 @@ public class ActFacebookGoogleLogin extends AppCompatActivity {
                 LoginManager.getInstance().logOut();
             }
         });
+        //Google Login
+
+        tv = (TextView) findViewById(R.id.text);
+       /* iv = (ImageView) findViewById(R.id.iv);
+        btn = (Button) findViewById(R.id.btn);*/
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode, resultCode, data);
+
     }
 
     protected void getUserDetails(LoginResult loginResult) {
@@ -99,4 +117,6 @@ public class ActFacebookGoogleLogin extends AppCompatActivity {
         // Logs 'app deactivate' App Event.
         AppEventsLogger.deactivateApp(this);
     }
+
+
 }

@@ -15,7 +15,7 @@ import rupesh.androidpracticaletwo.R;
 
 public class ActList extends AppCompatActivity implements View.OnClickListener {
 
-    public Button btn1,btn2;
+    public Button btn1,btn2,btn3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +24,8 @@ public class ActList extends AppCompatActivity implements View.OnClickListener {
         btn1.setOnClickListener(this);
         btn2 = (Button) findViewById(R.id.button2);
         btn2.setOnClickListener(this);
+        btn3 = (Button) findViewById(R.id.button3);
+        btn3.setOnClickListener(this);
     }
 
     @Override
@@ -36,6 +38,7 @@ public class ActList extends AppCompatActivity implements View.OnClickListener {
             case R.id.button2:
                 startActivity(new Intent(getApplicationContext(), ActFacebookGoogleLogin.class));
                 break;
+
         }
     }
 

@@ -12,4 +12,8 @@
         android:id="@+id/button2"
         style="@style/Button"
         android:text="2) Facebook and Google Login" />
+    <Button
+        android:id="@+id/button3"
+        style="@style/Button"
+        android:text="3) Dot Indecator " />
 </LinearLayout>
