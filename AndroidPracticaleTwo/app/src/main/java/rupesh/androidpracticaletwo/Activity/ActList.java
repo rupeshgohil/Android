@@ -15,7 +15,7 @@ import rupesh.androidpracticaletwo.R;
 
 public class ActList extends AppCompatActivity implements View.OnClickListener {
 
-    public Button btn1,btn2,btn3;
+    public Button btn1,btn2,btn3,btn4,btn5,btn6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +26,12 @@ public class ActList extends AppCompatActivity implements View.OnClickListener {
         btn2.setOnClickListener(this);
         btn3 = (Button) findViewById(R.id.button3);
         btn3.setOnClickListener(this);
+        btn4 = (Button) findViewById(R.id.button4);
+        btn4.setOnClickListener(this);
+        btn5 = (Button) findViewById(R.id.button5);
+        btn5.setOnClickListener(this);
+        btn6 = (Button) findViewById(R.id.button6);
+        btn6.setOnClickListener(this);
     }
 
     @Override
@@ -40,6 +46,15 @@ public class ActList extends AppCompatActivity implements View.OnClickListener {
                 break;
             case R.id.button3:
                 startActivity(new Intent(getApplicationContext(), ActDotIndecator.class));
+                break;
+            case R.id.button4:
+                startActivity(new Intent(getApplicationContext(), ActSQLiteDatabase.class));
+                break;
+            case R.id.button5:
+                startActivity(new Intent(getApplicationContext(), ActCallapsingLayout.class));
+                break;
+            case R.id.button6:
+                startActivity(new Intent(getApplicationContext(), ActMenuEvent.class));
                 break;
         }
     }
