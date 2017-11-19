@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -28,6 +30,10 @@
         <activity android:name=".Activity.ActFacebookGoogleLogin"/>
         <activity android:name=".Activity.ActCallapsingLayout"/>
         <activity android:name=".Activity.ActMenuEvent"/>
+        <activity android:name=".Activity.ActGridViewSelectItem"
+            android:exported="true"
+            />
+        <activity android:name=".Activity.UploadActivity"/>
             <!--android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:label="@string/app_name" />-->
