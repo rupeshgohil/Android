@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/cardview_dark_background"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txt_title_popup"
+            android:text="Hello Rupesh"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/cardview_dark_background"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_pic_profile"
+            android:src="@mipmap/ic_launcher"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

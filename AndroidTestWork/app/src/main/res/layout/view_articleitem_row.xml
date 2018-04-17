@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview1"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="10dp"
+        card_view:contentPadding="10dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardMaxElevation="10dp">
+   <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/profile_image"
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:src="@drawable/ic_user"
+               card_view:civ_border_width="1dp"/>
+           <ProgressBar
+               android:id="@+id/progressBar1"
+               style="?android:attr/progressBarStyleLarge"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"/>
+       </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_author"
+            android:text="title"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_title"
+            android:text="title"
+            android:maxLines="1"
+            android:layout_alignParentRight="true"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:freezesText="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_published"
+            android:text="title"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_desc"
+            android:text="title"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

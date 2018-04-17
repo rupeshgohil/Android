@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="7dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/Login_edtUsername"
+                android:hint="@string/username"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/Login_edtPassword"
+                android:hint="@string/psw"
+                android:singleLine="true"
+                android:inputType="textAutoComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/Login_btnLogin"
+            android:text="Login"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatTextView
+            android:text="Yet Not Login?"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatTextView
+            android:text="SignUp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="20sp"
+            android:id="@+id/Login_txt_signup"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+</LinearLayout>
+</layout>
