@@ -18,6 +18,8 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 
 import aru.jsonsqlite.Interface.RecyclerviewClickListener;
 import aru.jsonsqlite.Model.Articale;
@@ -28,17 +30,37 @@ import aru.jsonsqlite.R;
  */
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>{
-    ArrayList<Articale> arrayarticale = new ArrayList<>();
+    ArrayList<Articale> arrayarticale;
     public Context mContext;
     View itemview;
     private RecyclerviewClickListener mListener;
+    ArrayList<Articale> searcharray;
     public RecyclerViewAdapter(ArrayList<Articale> articaleArrayList, Context mContext, RecyclerviewClickListener recyclerviewClickListener) {
         this.arrayarticale = articaleArrayList;
         this.mContext = mContext;
         this.mListener = recyclerviewClickListener;
-        Log.e("arrayofarticale",""+articaleArrayList.toString());
+        this.searcharray = new ArrayList<>();
+        this.searcharray.addAll(arrayarticale);
+
     }
-     public class MyViewHolder extends RecyclerView.ViewHolder {
+
+    public void setFilter(String searchtext) {
+            Log.e("text333",searchtext);
+        searchtext = searchtext.toLowerCase(Locale.getDefault());
+        arrayarticale.clear();
+        if (searchtext.length() == 0) {
+            arrayarticale.addAll(searcharray);
+        } else {
+            for (Articale s : searcharray) {
+                if (s.getAuthor().toLowerCase(Locale.getDefault()).contains(searchtext)) {
+                    arrayarticale.add(s);
+                }
+            }
+        }
+        notifyDataSetChanged();
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         public ImageView img_prof;
         public ProgressBar mProgressBar;
         public TextView title,aithor,publishedat,description;

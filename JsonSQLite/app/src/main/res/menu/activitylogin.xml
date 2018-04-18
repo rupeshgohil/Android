@@ -3,16 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".Activity.LoginActivity">
-    <group android:menuCategory="alternative">
-        <item android:id="@+id/menu_Logout"
-            app:showAsAction="never"
-            android:title="A to Z">
-        </item>
-        <item android:id="@+id/menu_Details"
-            app:showAsAction="never"
-            android:title="Z to A">
-        </item>
-
-
-    </group>
+    <item android:id="@+id/menu_Logout"
+        app:showAsAction="never"
+        android:title="A to Z">
+    </item>
+    <item android:id="@+id/menu_Details"
+        app:showAsAction="never"
+        android:title="Z to A">
+    </item>
+    <item
+        android:icon="@android:drawable/ic_menu_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="Search"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:id="@+id/search"/>
 </menu>
