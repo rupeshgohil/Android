@@ -17,4 +17,14 @@
         android:title="Search"
         app:showAsAction="ifRoom|collapseActionView"
         android:id="@+id/search"/>
+    <item android:id="@+id/others"
+        app:showAsAction="never"
+        android:title="Others">
+        <menu>
+            <item android:id="@+id/Good"
+                app:showAsAction="never"
+                android:title="Good"></item>
+        </menu>
+
+    </item>
 </menu>

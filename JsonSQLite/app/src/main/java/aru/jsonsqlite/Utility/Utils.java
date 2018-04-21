@@ -1,5 +1,7 @@
 package aru.jsonsqlite.Utility;
 
+import android.widget.PopupWindow;
+
 /**
  * Created by Aru on 14-07-2017.
  */
@@ -17,4 +19,5 @@ public class Utils {
     public static String METHODSOAP = "send_otp_req";
     public static final String NAMESPACESOAP= "http://hr.aamanimyoffice.com/hr.asmx";
     public static  boolean iSInsert = true;
+    public static PopupWindow mPOPUP_WINDOW;
 }

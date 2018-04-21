@@ -32,7 +32,7 @@ import aru.jsonsqlite.Model.Articale;
 import aru.jsonsqlite.Utility.Utils;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
     private RecyclerViewAdapter mRecyclerViewAdapter;
     ArrayList<Articale> articaleArrayList = new ArrayList<>();
     String url;
@@ -79,13 +79,13 @@ public class MainActivity extends AppCompatActivity {
                         articale.setPublishedAt(j_obj.getString("publishedAt"));
                         articaleArrayList.add(articale);
                     }
-                     mRecyclerViewAdapter = new RecyclerViewAdapter(articaleArrayList,mContext, new RecyclerviewClickListener() {
-                        @Override
-                        public void Onclick(Articale articale) {
-                            Toast.makeText(getApplicationContext(),"Author==>"+articale.getAuthor()+"title==>"+articale.getTitle(),Toast.LENGTH_SHORT).show();
-                        }
-                    });
-                    mRecyclerView.setAdapter(mRecyclerViewAdapter);
+                     mRecyclerViewAdapter = new RecyclerViewAdapter(articaleArrayList, mContext, new RecyclerviewClickListener() {
+                         @Override
+                         public void OnNewclick(int pos) {
+                            Toast.makeText(getApplicationContext(),articaleArrayList.get(pos).getAuthor(),Toast.LENGTH_SHORT).show();
+                         }
+                     });
+                     mRecyclerView.setAdapter(mRecyclerViewAdapter);
                     progress.dismiss();
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -159,5 +159,15 @@ public class MainActivity extends AppCompatActivity {
         });
         mRecyclerView.setAdapter(mRecyclerViewAdapter);
         mRecyclerViewAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        if(Utils.mPOPUP_WINDOW.isShowing()){
+            Utils.mPOPUP_WINDOW.dismiss();
+        }else{
+            super.onBackPressed();
+        }
     }
 }

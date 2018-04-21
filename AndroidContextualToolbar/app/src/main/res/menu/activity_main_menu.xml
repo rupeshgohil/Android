@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        app:showAsAction="always"
+        android:title="Delete"
+        android:orderInCategory="300"
+        android:icon="@mipmap/ic_delete"
+        android:id="@+id/delete">
+    </item>
+    <item
+        app:showAsAction="always"
+        android:title="Color"
+        android:orderInCategory="200"
+        android:icon="@mipmap/ic_color_mark"
+        android:id="@+id/Color">
+    </item>
+    <item
+        app:showAsAction="always"
+        android:title="Refresh"
+        android:orderInCategory="300"
+        android:icon="@mipmap/ic_refresh"
+        android:id="@+id/Refresh">
+    </item>
+    <item
+        app:showAsAction="always"
+        android:title="All"
+        android:orderInCategory="400"
+        android:icon="@mipmap/ic_select_all"
+        android:id="@+id/All">
+    </item>
+</menu>

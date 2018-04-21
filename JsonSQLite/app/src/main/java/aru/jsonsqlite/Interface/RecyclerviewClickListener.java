@@ -7,6 +7,7 @@ import aru.jsonsqlite.Model.Articale;
 
 public interface RecyclerviewClickListener {
 
-   void Onclick(Articale articale);
+  // void Onclick(Articale articale);
 
+    void OnNewclick(int pos);
 }
